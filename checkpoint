@@ -1,0 +1,2 @@
+model_checkpoint_path: "/Users/bibekitani/Documents/Flask_demo-2-master/model.tflearn"
+all_model_checkpoint_paths: "/Users/bibekitani/Documents/Flask_demo-2-master/model.tflearn"

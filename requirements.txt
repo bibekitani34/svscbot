@@ -1,0 +1,5 @@
+Flask @ file:///home/ktietz/src/ci/flask_1611932660458/work
+gevent @ file:///opt/concourse/worker/volumes/live/123efac8-0706-463e-4084-078386897222/volume/gevent_1616772940436/work
+gunicorn==20.1.0
+nltk==3.6.5
+tflearn==0.5.0

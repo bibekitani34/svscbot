@@ -40,7 +40,7 @@ def submit():
             <div class="received_msg">
                 <div class="received_withd_msg">
                     <p>%s</p>
-                    <span class="time_date">Shiva |  %s</span></div>
+                    <span class="time_date">Virtual Assistant |  %s</span></div>
             </div>
         </div>
     """ % (

@@ -1,62 +1,139 @@
-{"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
-         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
-         "context_set": ""
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That's helpful"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"]
-        },
-        {"tag": "voicemail",
-         "patterns": ["What is the passcode for SVSC voicemail?", "What is the phone number of SVSC?", "How to access the SVSC voicemail?", "Check Voicemails" ],
-         "responses": ["Check Voicemail from SkyPro: call 404-715-9522 and when the voice answers press * and then * again and then the passcode 258000"]
-        },
-        {"tag": "SPAMS",
-         "patterns": ["How to avoid spams?", "How to block the spam call?", "Block Spams" ],
-         "responses": ["Please follow the Steps! Texts: Open the message, tap the > icon next to phone number, tap info icon, tap info, Block the Caller, Calls: Tape the info icon next to the phone number > Block this Caller"]
-        },
-        {"tag": "Success Factor LMS and CQ Training",
-         "patterns": ["What is the contact for Service Learning Team?","Contact LMS","Email of LMS","Contact for eLearning content", "What is the IFS Portal URL?", "I have a questions related to CQ" ],
-         "responses": ["For issues with eLearning content, contact the Service Learning Team: IFSLMS.delta@delta.com or 404-715-0985. Question about CQ, ask your FSM or visit IFS Portal - deltaairlines.sharepoint.com/company/IFS/Learning/Pages/CQ-Training"]
-        },
-        {"tag": "Password",
-         "patterns": ["How to recover the forgotten password?", "How do I recover my password", "FA forgot their password", "How to troubleshoot forgotten password?"],
-         "responses": ["Apple Factory Reset is required and takes 2 hours. Email the info to the FA(see Forgotten Passcode tab). Can help unlock for special situations."]
-        },
-        {"tag": "Endeavor DL Connection Carrier",
-         "patterns": ["Who handles the Endeavor flight attendants?", "What is the phone number to Delta Connection Carrier", "Contact for Endeavor", "DL Connection Contact", "Endeavor" ],
-         "responses": ["Stratix handles support for Endeavor flight attendants ( Delta Connection carrier): 1-800-883-8300"]
-         
+{
+    "intents": [{
+            "tag": "greeting",
+            "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day"],
+            "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+            "context_set": ""
         },
         {
-          "tag": "IT Help Desk",
-          "patterns": ["IT Help Desk Phone number", "IT Help Desk Contact info", "What is the phone number of IT Help Desk?"],
-          "responses": ["The phone number for IT Help Desk is: 404-714-4357"]
+            "tag": "goodbye",
+            "patterns": ["Bye", "See you later", "Goodbye"],
+            "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
         },
         {
-          "tag": "Apple Support",
-          "patterns": ["Apple Support Phone number", "Apple Support Contact info", "What is the phone number of Apple Support?", "Apple Support"],
-          "responses": ["The phone number for Apple Support is: 1-800-275-2273"]
+            "tag": "thanks",
+            "patterns": ["Thanks", "Thank you", "That's helpful"],
+            "responses": ["Happy to help!", "Any time!", "My pleasure"]
         },
         {
-          "tag": "UPS link",
-          "patterns": ["UPS webpage link", "UPS URL", "What is the link to UPS My Choice?", "UPS My Choice"],
-          "responses": ["The link for UPS MY Choice is: www.ups.com/us/en/services/tracking/mychoice.page"]
+            "tag": "voicemail",
+            "patterns": ["What is the passcode for SVSC voicemail?", "What is the phone number of SVSC?", "How to access the SVSC voicemail?", "Check Voicemails"],
+            "responses": ["Check Voicemail from SkyPro: call 404-715-9522 and when the voice answers press * and then * again and then the passcode 258000"]
         },
         {
-          "tag": "Service Center Main Line",
-          "patterns": ["Service Center Main Line", "Service Center Main Line Phone number", "What is the phone number of Service Center?"],
-          "responses": ["The phone number for Service Center Main Line is: 404-714-2560"]
+            "tag": "SPAMS",
+            "patterns": ["How to avoid spams?", "How to block the spam call?", "Block Spams"],
+            "responses": ["Please follow the Steps! Texts: Open the message, tap the > icon next to phone number, tap info icon, tap info, Block the Caller, Calls: Tape the info icon next to the phone number > Block this Caller"]
         },
-        {"tag": "today",
-         "patterns": ["today"],
-         "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
-         "context_filter": "rentalday"
+        {
+            "tag": "Success Factor LMS and CQ Training",
+            "patterns": ["What is the contact for Service Learning Team?", "Contact LMS", "Email of LMS", "Contact for eLearning content", "What is the IFS Portal URL?", "I have a questions related to CQ"],
+            "responses": ["For issues with eLearning content, contact the Service Learning Team: IFSLMS.delta@delta.com or 404-715-0985. Question about CQ, ask your FSM or visit IFS Portal - deltaairlines.sharepoint.com/company/IFS/Learning/Pages/CQ-Training"]
+        },
+        {
+            "tag": "Password",
+            "patterns": ["How to recover the forgotten password?", "How do I recover my password", "FA forgot their password", "How to troubleshoot forgotten password?"],
+            "responses": ["Apple Factory Reset is required and takes 2 hours. Email the info to the FA(see Forgotten Passcode tab). Can help unlock for special situations."]
+        },
+        {
+            "tag": "Endeavor DL Connection Carrier",
+            "patterns": ["Who handles the Endeavor flight attendants?", "What is the phone number to Delta Connection Carrier", "Contact for Endeavor", "DL Connection Contact", "Endeavor"],
+            "responses": ["Stratix handles support for Endeavor flight attendants ( Delta Connection carrier): 1-800-883-8300"]
+
+        },
+        {
+            "tag": "IT Help Desk",
+            "patterns": ["IT Help Desk Phone number", "IT Help Desk Contact info", "What is the phone number of IT Help Desk?"],
+            "responses": ["The phone number for IT Help Desk is: 404-714-4357"]
+        },
+        {
+            "tag": "Apple Support",
+            "patterns": ["Apple Support Phone number", "Apple Support Contact info", "What is the phone number of Apple Support?", "Apple Support"],
+            "responses": ["The phone number for Apple Support is: 1-800-275-2273"]
+        },
+        {
+            "tag": "UPS link",
+            "patterns": ["UPS webpage link", "UPS URL", "What is the link to UPS My Choice?", "UPS My Choice"],
+            "responses": ["The link for UPS MY Choice is: www.ups.com/us/en/services/tracking/mychoice.page"]
+        },
+        {
+            "tag": "Service Center Main Line",
+            "patterns": ["Service Center Main Line", "Service Center Main Line Phone number", "What is the phone number of Service Center?"],
+            "responses": ["The phone number for Service Center Main Line is: 404-714-2560"]
+        },
+        {
+            "tag": "MiCrew",
+            "patterns": ["MiCrew info", "MiCrew", "iCrew", "iCrew Mobile Link"],
+            "responses": ["For issues that can’t be solved immediately with MiCrew, use the iCrew Mobile weblink. Notes: location must be ON for sign in and not before 3 hours Workspace is what FA needs to get MiCrew on their personal phones (not the SkyPro so we don’t support). Delta IT Help Desk or email this link. https://deltaairlines.sharepoint.com/company/IT/MobileServices/Documents/A_iOS_workspace_Unmanaged.pdf"]
+        },
+        {
+            "tag": "pop",
+            "patterns": ["pop", "POP", "RMA", "card reader"],
+            "responses": ["Process RMA for Accessory Not Supported. Try troubleshooting steps for Card Reader Not Recognized to get pop/phone communicating Go through troubleshooting steps that have worked for many FA (see POP Testing tab). If this doesn’t work, process RMACheck DL email for a notification from our vendor Stratix on when the POP will be delivered to your home"]
+        },
+        {
+            "tag": "safety reporting app",
+            "patterns": ["safety reporting app", "how to log in to safety reporting app", "safety reporting"],
+            "responses": ["Log in credentials - Device Type: Personal, Customer ID or Airline: dal, Username: 6-digit PPR, Device Name: leave blank no info needed"]
+        },
+        {
+            "tag": "sap concur",
+            "patterns": ["complete expense reports", "concur", "sap concur", "concur support contact", "contact for concur support"],
+            "responses": ["pp used for completing expense reports and is not managed by Delta but does require password/pin set up with Concur. Concur Support: 1-855-895-4815 or www.concursolutions.com or Delta IT Help Desk 404-714-4357"]
+        },
+        {
+            "tag": "mfa or pingid",
+            "patterns": ["mfa", "pingid", "verification"],
+            "responses": ["Delta security system that requires more than one method to verify the user’s identity for login. Register MFA and Ping ID app are apps on the SkyPro. Resources: Content Locker app > Delta Content > SkyPro folder > MFA Visit the IFS Portal for step-by-step instructions. For any issues, contact the IT Help Desk at 404-714-4357 (714-HELP) https://deltaairlines.sharepoint.com/company/IT/InformationSecurity/Pages/MultiFactorAuthentication.aspx"]
+        },
+        {
+            "tag": "loaner return",
+            "patterns": ["loaner", "loaner return"],
+            "responses": ["Phone needs to have power, out of airplane mode, unlocked and on the home screen before placing back in any open port \n\nCan unlock the passcode to help get a loaner back. Confirm device changes in Ground Control to 'Begin Checking In' before letting FA go.\n\nYou should receive a notification to your Delta email with the loaner return info. Please close and lock the kiosk cabinet\n\nIf FA is out on leave, email UPS label (From: Base) so they can ship it back to the SVSC. Add the tracking info to Issue Summary in Astute ticket"]
+        },
+        {
+            "tag": "name change",
+            "patterns": ["name change on home screen", "name change", "how to change name in home screen"],
+            "responses": ["SkyProfessor or Admin - AirWatch portal > Profiles > SkyDevices Restrictions > Remove > Query \n\nFA - Locate the HUB app (Blue Hexagon tile) and select Log Out. Now enroll the device again in HUB with your credentials.\n\n Group ID: skypro2 (all lower case), Username: six-digit employee number, Password: DeltaNet password, Tap the Log In button"]
+        },
+        {
+            "tag": "flight family",
+            "patterns": ["flight family", "ff", "flight family app", "flight family app info"],
+            "responses": ["App works on both Wi-Fi and cellular so turn off one option and try using the other channel and known connectivity challenges in certain locations"]
+        },
+        {
+            "tag": "videos",
+            "patterns": ["how to videos app", "how to video app", "video app"],
+            "responses": ["How to Videos app on your SkyPro. Password is skypro. (Hub, Content Locker, Email, Passcode, Touch ID, POP, GST Recognitions, FPOC)"]
+        },
+        {
+            "tag": "ios",
+            "patterns": ["troubleshoot ios", "ios"],
+            "responses": ["Best practices include: allow 30 minutes, connected to Wi Fi, and plugged in to a power outlet. Issues: cancel download, power on/off and try again Settings app > General > Software Update > follow the instructions on the phone to Download and Install. DL IFS controls latest version available"]
+        },
+        {
+            "tag": "intelligent hub",
+            "patterns": ["intelligent hub"],
+            "responses": ["Group ID - FA: skypro2 (lower case), FSM: CRWLDRS (upper case) \n\n Update HUB: Delta Catalog > HUB (Blue Hexagon tile) > Installed > Install. \n\n No further action is required. Doesn’t appear on screen/runs background"]
+        },
+
+        {
+            "tag": "userguide",
+            "patterns": ["job aids", "skypro user guide", "access job aids", "access skypro user guide"],
+            "responses": ["Helpful info from Service Learning in your SkyPro Content Locker for GST, FPOC, MiCrew, POP, Flight Family, Content Locker and iPhone user guide"]
+        },
+        {
+            "tag": "videos",
+            "patterns": ["how to videos app", "how to video app", "video app"],
+            "responses": ["How to Videos app on your SkyPro. Password is skypro. (Hub, Content Locker, Email, Passcode, Touch ID, POP, GST Recognitions, FPOC)"]
+        },
+
+
+        {
+            "tag": "today",
+            "patterns": ["today"],
+            "responses": ["For rentals today please call 1-800-MYMOPED", "Same-day rentals please call 1-800-MYMOPED"],
+            "context_filter": "rentalday"
         }
-   ]
+    ]
 }

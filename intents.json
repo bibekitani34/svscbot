@@ -123,8 +123,8 @@
             "responses": ["Helpful info from Service Learning in your SkyPro Content Locker for GST, FPOC, MiCrew, POP, Flight Family, Content Locker and iPhone user guide"]
         },
         {
-            "tag": "videos",
-            "patterns": ["how to videos app", "how to video app", "video app"],
+            "tag": "loanerissued",
+            "patterns": ["loaner issued", "video app"],
             "responses": ["How to Videos app on your SkyPro. Password is skypro. (Hub, Content Locker, Email, Passcode, Touch ID, POP, GST Recognitions, FPOC)"]
         },
 
